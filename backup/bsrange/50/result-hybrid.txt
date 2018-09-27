@@ -1,0 +1,293 @@
+hybrid poll-based i/o sevices
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 4096B-6143B, (W) 4096B-6143B, (T) 4096B-6143B, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10422: Fri Sep 14 18:52:08 2018
+   read: IOPS=103k, BW=402MiB/s (421MB/s)(23.5GiB/60001msec)
+    clat (usec): min=8, max=329, avg= 9.25, stdev= 1.44
+     lat (usec): min=8, max=329, avg= 9.29, stdev= 1.45
+    clat percentiles (usec):
+     |  1.000000th=[    9], 25.000000th=[   10], 50.000000th=[   10],
+     | 75.000000th=[   10], 90.000000th=[   10], 99.000000th=[   15],
+     | 99.900000th=[   36], 99.990000th=[   40], 99.999000th=[   47],
+     | 99.999900th=[  196], 99.999990th=[  330], 99.999999th=[  330],
+     | 100.000000th=[  330]
+   bw (  KiB/s): min=392496, max=417624, per=99.99%, avg=411187.24, stdev=5482.35, samples=119
+   iops        : min=98124, max=104406, avg=102796.74, stdev=1370.65, samples=119
+  lat (usec)   : 10=97.66%, 20=2.08%, 50=0.26%, 100=0.01%, 250=0.01%
+  lat (usec)   : 500=0.01%
+  cpu          : usr=9.58%, sys=51.54%, ctx=6168672, majf=0, minf=21
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=6168685,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=402MiB/s (421MB/s), 402MiB/s-402MiB/s (421MB/s-421MB/s), io=23.5GiB (25.3GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=6156872/0, merge=0/0, ticks=40860/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 6144B-8191B, (W) 6144B-8191B, (T) 6144B-8191B, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10442: Fri Sep 14 18:53:18 2018
+   read: IOPS=90.8k, BW=532MiB/s (558MB/s)(31.2GiB/60001msec)
+    clat (usec): min=9, max=213, avg=10.51, stdev= 1.60
+     lat (usec): min=9, max=213, avg=10.55, stdev= 1.60
+    clat percentiles (usec):
+     |  1.000000th=[   10], 25.000000th=[   11], 50.000000th=[   11],
+     | 75.000000th=[   11], 90.000000th=[   11], 99.000000th=[   16],
+     | 99.900000th=[   37], 99.990000th=[   41], 99.999000th=[   49],
+     | 99.999900th=[   60], 99.999990th=[  215], 99.999999th=[  215],
+     | 100.000000th=[  215]
+   bw (  KiB/s): min=526872, max=549996, per=100.00%, avg=544779.24, stdev=4974.85, samples=119
+   iops        : min=87812, max=91666, avg=90796.52, stdev=829.14, samples=119
+  lat (usec)   : 10=15.78%, 20=83.80%, 50=0.42%, 100=0.01%, 250=0.01%
+  cpu          : usr=8.40%, sys=53.48%, ctx=5447912, majf=0, minf=26
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=5447915,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=532MiB/s (558MB/s), 532MiB/s-532MiB/s (558MB/s-558MB/s), io=31.2GiB (33.5GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=5437453/0, merge=0/0, ticks=46368/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 8192B-11.0KiB, (W) 8192B-11.0KiB, (T) 8192B-11.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10462: Fri Sep 14 18:54:29 2018
+   read: IOPS=87.7k, BW=685MiB/s (719MB/s)(40.2GiB/60001msec)
+    clat (usec): min=10, max=337, avg=10.90, stdev= 1.61
+     lat (usec): min=10, max=337, avg=10.94, stdev= 1.61
+    clat percentiles (usec):
+     |  1.000000th=[   11], 25.000000th=[   11], 50.000000th=[   11],
+     | 75.000000th=[   11], 90.000000th=[   11], 99.000000th=[   16],
+     | 99.900000th=[   38], 99.990000th=[   42], 99.999000th=[   49],
+     | 99.999900th=[  159], 99.999990th=[  338], 99.999999th=[  338],
+     | 100.000000th=[  338]
+   bw (  KiB/s): min=682784, max=708432, per=99.99%, avg=701715.01, stdev=5119.11, samples=119
+   iops        : min=85348, max=88554, avg=87714.37, stdev=639.91, samples=119
+  lat (usec)   : 20=99.49%, 50=0.51%, 100=0.01%, 250=0.01%, 500=0.01%
+  cpu          : usr=8.19%, sys=53.40%, ctx=5263312, majf=0, minf=25
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=5263312,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=685MiB/s (719MB/s), 685MiB/s-685MiB/s (719MB/s-719MB/s), io=40.2GiB (43.1GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=5253363/0, merge=0/0, ticks=46968/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 12.0KiB-15.0KiB, (W) 12.0KiB-15.0KiB, (T) 12.0KiB-15.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10482: Fri Sep 14 18:55:40 2018
+   read: IOPS=74.9k, BW=878MiB/s (920MB/s)(51.4GiB/60001msec)
+    clat (usec): min=12, max=198, avg=12.85, stdev= 1.71
+     lat (usec): min=12, max=198, avg=12.89, stdev= 1.71
+    clat percentiles (usec):
+     |  1.000000th=[   13], 25.000000th=[   13], 50.000000th=[   13],
+     | 75.000000th=[   13], 90.000000th=[   13], 99.000000th=[   21],
+     | 99.900000th=[   40], 99.990000th=[   44], 99.999000th=[   51],
+     | 99.999900th=[   69], 99.999990th=[  200], 99.999999th=[  200],
+     | 100.000000th=[  200]
+   bw (  KiB/s): min=869352, max=907344, per=100.00%, avg=898622.76, stdev=7991.46, samples=119
+   iops        : min=72446, max=75612, avg=74885.24, stdev=665.95, samples=119
+  lat (usec)   : 20=98.92%, 50=1.08%, 100=0.01%, 250=0.01%
+  cpu          : usr=6.63%, sys=53.88%, ctx=4493384, majf=0, minf=29
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=4493377,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=878MiB/s (920MB/s), 878MiB/s-878MiB/s (920MB/s-920MB/s), io=51.4GiB (55.2GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=4484754/0, merge=0/0, ticks=48308/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 16.0KiB-22.0KiB, (W) 16.0KiB-22.0KiB, (T) 16.0KiB-22.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+fio: pid=10502, err=61/file:io_u.c:1820, func=io_u error, error=No data available
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err=61 (file:io_u.c:1820, func=io_u error, error=No data available): pid=10502: Fri Sep 14 18:56:25 2018
+   read: IOPS=66.6k, BW=1041MiB/s (1092MB/s)(35.0GiB/34448msec)
+    clat (usec): min=13, max=202, avg=14.51, stdev= 1.91
+     lat (usec): min=13, max=202, avg=14.54, stdev= 1.91
+    clat percentiles (usec):
+     |  1.000000th=[   14], 25.000000th=[   15], 50.000000th=[   15],
+     | 75.000000th=[   15], 90.000000th=[   15], 99.000000th=[   23],
+     | 99.900000th=[   42], 99.990000th=[   47], 99.999000th=[   54],
+     | 99.999900th=[   83], 99.999990th=[  202], 99.999999th=[  202],
+     | 100.000000th=[  202]
+   bw (  MiB/s): min= 1035, max= 1046, per=100.00%, avg=1041.18, stdev= 2.58, samples=68
+   iops        : min=66296, max=66972, avg=66635.38, stdev=164.94, samples=68
+  lat (usec)   : 20=98.32%, 50=1.67%, 100=0.01%, 250=0.01%
+  cpu          : usr=5.58%, sys=54.23%, ctx=2295478, majf=0, minf=22
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.1%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2295470,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1041MiB/s (1092MB/s), 1041MiB/s-1041MiB/s (1092MB/s-1092MB/s), io=35.0GiB (37.6GB), run=34448-34448msec
+
+Disk stats (read/write):
+  nvme1n1: ios=2291644/0, merge=0/0, ticks=28444/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 23.0KiB-31.0KiB, (W) 23.0KiB-31.0KiB, (T) 23.0KiB-31.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10522: Fri Sep 14 18:57:35 2018
+   read: IOPS=53.8k, BW=1209MiB/s (1268MB/s)(70.9GiB/60001msec)
+    clat (usec): min=16, max=361, avg=18.07, stdev= 2.33
+     lat (usec): min=16, max=361, avg=18.11, stdev= 2.33
+    clat percentiles (usec):
+     |  1.000000th=[   17], 25.000000th=[   18], 50.000000th=[   18],
+     | 75.000000th=[   19], 90.000000th=[   19], 99.000000th=[   28],
+     | 99.900000th=[   47], 99.990000th=[   54], 99.999000th=[   64],
+     | 99.999900th=[  227], 99.999990th=[  363], 99.999999th=[  363],
+     | 100.000000th=[  363]
+   bw (  MiB/s): min= 1202, max= 1216, per=100.00%, avg=1209.39, stdev= 2.81, samples=119
+   iops        : min=53530, max=54154, avg=53844.13, stdev=124.90, samples=119
+  lat (usec)   : 20=95.98%, 50=4.00%, 100=0.02%, 250=0.01%, 500=0.01%
+  cpu          : usr=4.83%, sys=53.96%, ctx=3230696, majf=0, minf=18
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=3230691,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1209MiB/s (1268MB/s), 1209MiB/s-1209MiB/s (1268MB/s-1268MB/s), io=70.9GiB (76.1GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=3224446/0, merge=0/0, ticks=50652/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 32.0KiB-45.0KiB, (W) 32.0KiB-45.0KiB, (T) 32.0KiB-45.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10542: Fri Sep 14 18:58:46 2018
+   read: IOPS=46.6k, BW=1456MiB/s (1527MB/s)(85.3GiB/60001msec)
+    clat (usec): min=19, max=382, avg=20.96, stdev= 2.63
+     lat (usec): min=19, max=382, avg=21.00, stdev= 2.63
+    clat percentiles (usec):
+     |  1.000000th=[   21], 25.000000th=[   21], 50.000000th=[   21],
+     | 75.000000th=[   21], 90.000000th=[   22], 99.000000th=[   33],
+     | 99.900000th=[   51], 99.990000th=[   59], 99.999000th=[   71],
+     | 99.999900th=[  190], 99.999990th=[  383], 99.999999th=[  383],
+     | 100.000000th=[  383]
+   bw (  MiB/s): min= 1425, max= 1468, per=100.00%, avg=1455.94, stdev= 9.00, samples=119
+   iops        : min=45610, max=46980, avg=46590.14, stdev=287.94, samples=119
+  lat (usec)   : 20=0.25%, 50=99.59%, 100=0.16%, 250=0.01%, 500=0.01%
+  cpu          : usr=3.72%, sys=54.15%, ctx=2795520, majf=0, minf=45
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2795507,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1456MiB/s (1527MB/s), 1456MiB/s-1456MiB/s (1527MB/s-1527MB/s), io=85.3GiB (91.6GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=2790168/0, merge=0/0, ticks=51540/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 46.0KiB-63.0KiB, (W) 46.0KiB-63.0KiB, (T) 46.0KiB-63.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10562: Fri Sep 14 18:59:56 2018
+   read: IOPS=35.7k, BW=1606MiB/s (1684MB/s)(94.1GiB/60001msec)
+    clat (usec): min=25, max=351, avg=27.48, stdev= 3.73
+     lat (usec): min=25, max=351, avg=27.52, stdev= 3.73
+    clat percentiles (usec):
+     |  1.000000th=[   26], 25.000000th=[   26], 50.000000th=[   27],
+     | 75.000000th=[   28], 90.000000th=[   29], 99.000000th=[   46],
+     | 99.900000th=[   60], 99.990000th=[   74], 99.999000th=[   89],
+     | 99.999900th=[  106], 99.999990th=[  351], 99.999999th=[  351],
+     | 100.000000th=[  351]
+   bw (  MiB/s): min= 1596, max= 1611, per=100.00%, avg=1605.70, stdev= 2.63, samples=119
+   iops        : min=35542, max=35872, avg=35744.20, stdev=58.63, samples=119
+  lat (usec)   : 50=99.36%, 100=0.64%, 250=0.01%, 500=0.01%
+  cpu          : usr=2.93%, sys=54.14%, ctx=2144638, majf=0, minf=25
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2144623,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1606MiB/s (1684MB/s), 1606MiB/s-1606MiB/s (1684MB/s-1684MB/s), io=94.1GiB (101GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=2140276/0, merge=0/0, ticks=52516/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 64.0KiB-90.0KiB, (W) 64.0KiB-90.0KiB, (T) 64.0KiB-90.0KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10582: Fri Sep 14 19:01:07 2018
+   read: IOPS=28.6k, BW=1787MiB/s (1874MB/s)(105GiB/60001msec)
+    clat (usec): min=32, max=237, avg=34.45, stdev= 4.50
+     lat (usec): min=32, max=237, avg=34.49, stdev= 4.50
+    clat percentiles (usec):
+     |  1.000000th=[   33], 25.000000th=[   33], 50.000000th=[   34],
+     | 75.000000th=[   35], 90.000000th=[   36], 99.000000th=[   57],
+     | 99.900000th=[   73], 99.990000th=[   92], 99.999000th=[  111],
+     | 99.999900th=[  223], 99.999990th=[  237], 99.999999th=[  237],
+     | 100.000000th=[  237]
+   bw (  MiB/s): min= 1759, max= 1795, per=100.00%, avg=1787.50, stdev= 7.28, samples=119
+   iops        : min=28146, max=28732, avg=28600.05, stdev=116.41, samples=119
+  lat (usec)   : 50=98.31%, 100=1.69%, 250=0.01%
+  cpu          : usr=2.12%, sys=54.16%, ctx=1716029, majf=0, minf=65
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=1716014,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1787MiB/s (1874MB/s), 1787MiB/s-1787MiB/s (1874MB/s-1874MB/s), io=105GiB (112GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=1712711/0, merge=0/0, ticks=53324/0, in_queue=0, util=0.00%
+OptaneInitialPerfTest: (g=0): rw=randread, bs=(R) 91.0KiB-128KiB, (W) 91.0KiB-128KiB, (T) 91.0KiB-128KiB, ioengine=pvsync2, iodepth=1
+fio-3.5-109-g4fe72-dirty
+Starting 1 process
+
+OptaneInitialPerfTest: (groupid=0, jobs=1): err= 0: pid=10602: Fri Sep 14 19:02:18 2018
+   read: IOPS=21.2k, BW=1880MiB/s (1971MB/s)(110GiB/60001msec)
+    clat (usec): min=42, max=351, avg=46.75, stdev= 5.74
+     lat (usec): min=43, max=351, avg=46.79, stdev= 5.74
+    clat percentiles (usec):
+     |  1.000000th=[   44], 25.000000th=[   45], 50.000000th=[   45],
+     | 75.000000th=[   46], 90.000000th=[   56], 99.000000th=[   75],
+     | 99.900000th=[   92], 99.990000th=[  118], 99.999000th=[  143],
+     | 99.999900th=[  169], 99.999990th=[  351], 99.999999th=[  351],
+     | 100.000000th=[  351]
+   bw (  MiB/s): min= 1869, max= 1886, per=99.99%, avg=1879.90, stdev= 3.82, samples=119
+   iops        : min=21036, max=21232, avg=21154.00, stdev=43.03, samples=119
+  lat (usec)   : 50=86.33%, 100=13.62%, 250=0.05%, 500=0.01%
+  cpu          : usr=1.80%, sys=54.10%, ctx=1269350, majf=0, minf=35
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=1269340,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1880MiB/s (1971MB/s), 1880MiB/s-1880MiB/s (1971MB/s-1971MB/s), io=110GiB (118GB), run=60001-60001msec
+
+Disk stats (read/write):
+  nvme1n1: ios=1266943/0, merge=0/0, ticks=53964/0, in_queue=0, util=0.00%

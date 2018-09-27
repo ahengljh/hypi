@@ -1,0 +1,27 @@
+[global]
+name= OptaneInitialPerfTest
+ioengine=pvsync2
+hipri
+direct=1
+buffered=0
+size=100%
+randrepeat=0
+time_based
+ramp_time=0
+norandommap
+refill_buffers
+#log_avg_msec=1000
+#log_max_value=1
+group_reporting
+percentile_list=1.0:25.0:50.0:75.0:90.0:99.0:99.9:99.99:99.999:99.9999:99.99999:99.999999:100.0
+filename=/dev/nvme1n1
+[rd_rnd_qd_1_4k_1w]
+#stonewall
+bs=65536
+iodepth=1
+numjobs=1
+rw=randread
+runtime=60
+#write_bw_log=bw_rd_rnd_qd_1_4k_1w
+#write_iops_log=iops_rd_rnd_qd_1_4k_1w
+#write_lat_log=lat_rd_rnd_qd_1_4k_1w
